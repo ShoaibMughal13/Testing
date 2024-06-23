@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    background-color: rgb(223, 9, 155);
+    text-align: center;
+    position: sticky;
+    top: 0px;
+}
+.container ul{
+    display:inline-flex;
+    list-style: none;
+
+}
+.container ul li{
+    width: 180px;
+    margin: 5px;
+    padding: 5px;
+}
+.container ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+.container ul li:hover,.container ul li:hover>a,
+.container ul li:hover .fas
+{
+    background-color: blanchedalmond;
+    border-radius: 3px;
+    color: red;
+}
+.container ul li .fas,
+.container ul li .fab
+{
+    color: white;
+    margin-right: 20px;
+}
+.submenu-1 {
+    display: none;
+}
+.container ul li:hover .submenu-1 {
+    display: block;
+    position: absolute;
+    /* background-color:orangered; */
+    margin-top: 5px;
+    margin-left: -6px;
+
+}
+.container ul li:hover .submenu-1 ul{
+    display: block;
+    background-color: rgb(223, 9, 155);
+}
+.container ul li:hover .submenu-1 ul li{
+    border-bottom: 3px solid rgb(16, 6, 196);
+    padding: 2px;
+}
+.container ul li:hover .submenu-1 ul li:last-child{
+    border-bottom: 0px;
+}
+.submenu-1 ul li:hover{
+    color: red;
+    font-weight: bold;
+}
+.submenu-2{
+    display: none;
+}
+.hover-me:hover .submenu-2{
+    display: block;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: -20px;
+}
